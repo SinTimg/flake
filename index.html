@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>粒子发光特效</title>
+  <link rel="stylesheet" href="css/weui.min.css" />
+</head>
+
+<style>
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #110c1e;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#canvas{
+    -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+</style>
+<body>
+  <div class="button_sp_area">
+    <a href="#" id="model1"  class="weui_btn weui_btn_plain_default">特效1</a>
+    <a href="#" id="model2"  class="weui_btn weui_btn_plain_primary">特效2</a>
+
+    <a href="#" id="model3"  class="weui_btn weui_btn_mini weui_btn_primary">特效3</a>
+    <a href="#" id="isDrag1"  class="weui_btn weui_btn_mini weui_btn_default">切换拖拽模式</a>
+    <a href="#" id="isDrag2"  class="weui_btn weui_btn_mini weui_btn_default">切换点击模式</a>
+  </div>
+  <canvas id="canvas" style="width:100%;height:100%;border: 1px solid;display:block;">
+        当前浏览器不支持Canvas，请更换浏览器后再试
+  </canvas>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/fake.js"></script>
+
+</body>
+</html>
